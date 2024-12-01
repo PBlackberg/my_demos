@@ -1,0 +1,47 @@
+WARNING: overwriting environment variables set in the machine
+overwriting variable {'CARTOPY_USER_BACKGROUNDS'}
+daskArray
+daskArray
+daily
+2000
+High resolution dataset: 71.0 billion datapoints
+<xarray.DataArray 'random_sample-19e8a72d8b274034bcba7622694122ee' (lat: 1800,
+                                                                    lon: 3600,
+                                                                    time: 10957)> Size: 568GB
+dask.array<random_sample, shape=(1800, 3600, 10957), dtype=float64, chunksize=(255, 255, 255), chunktype=numpy.ndarray>
+Coordinates:
+  * lat      (lat) float64 14kB -90.0 -89.9 -89.8 -89.7 ... 89.6 89.7 89.8 89.9
+  * lon      (lon) float64 29kB -180.0 -179.9 -179.8 ... 179.7 179.8 179.9
+  * time     (time) datetime64[ns] 88kB 1998-01-01 1998-01-02 ... 2027-12-31
+
+section used by node:
+<xarray.DataArray 'random_sample-19e8a72d8b274034bcba7622694122ee' (lat: 1800,
+                                                                    lon: 3600,
+                                                                    time: 366)> Size: 19GB
+dask.array<getitem, shape=(1800, 3600, 366), dtype=float64, chunksize=(255, 255, 255), chunktype=numpy.ndarray>
+Coordinates:
+  * lat      (lat) float64 14kB -90.0 -89.9 -89.8 -89.7 ... 89.6 89.7 89.8 89.9
+  * lon      (lon) float64 29kB -180.0 -179.9 -179.8 ... 179.7 179.8 179.9
+  * time     (time) datetime64[ns] 3kB 2000-01-01 2000-01-02 ... 2000-12-31
+<xarray.DataArray (time: 1)> Size: 8B
+array([0.49999671])
+Coordinates:
+  * time     (time) datetime64[ns] 8B 2000-01-01
+
+calculated metric
+saved metric result at: /home/565/cb4968/my_demos/qsub_parallelization/qsub_parallelization_result/daskArray_metricResult_2000.nc
+removing pbs script
+finished
+
+======================================================================================
+                  Resource Usage on 2024-11-30 20:50:54:
+   Job Id:             129835816.gadi-pbs
+   Project:            k10
+   Exit Status:        0
+   Service Units:      1.66
+   NCPUs Requested:    1                      NCPUs Used: 1               
+                                           CPU Time Used: 00:01:16        
+   Memory Requested:   130.0GB               Memory Used: 41.35GB         
+   Walltime requested: 00:15:00            Walltime Used: 00:01:32        
+   JobFS requested:    200.0GB                JobFS used: 0B              
+======================================================================================
